@@ -1,4 +1,4 @@
-package ua.shalimov.server;
+package ua.shalimov.server.entity;
 
 public enum HttpMethod {
     GET("GET"), POST("POST");
@@ -9,7 +9,7 @@ public enum HttpMethod {
         this.name = name;
     }
 
-    static HttpMethod getHttpMethodByName(String name) {
+    public static HttpMethod getHttpMethodByName(String name) {
         for (HttpMethod httpMethod : values()) {
             if (httpMethod.name.equalsIgnoreCase(name)) {
                 return httpMethod;
@@ -17,5 +17,4 @@ public enum HttpMethod {
         }
         throw new IllegalArgumentException("No HttpMethod with name " + name + " found");
     }
-
 }

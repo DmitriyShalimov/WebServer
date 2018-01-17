@@ -2,6 +2,9 @@ package ua.shalimov.server;
 
 import org.junit.Test;
 import org.mockito.Mockito;
+import ua.shalimov.server.entity.HttpMethod;
+import ua.shalimov.server.entity.Request;
+import ua.shalimov.server.requesthandler.RequestParser;
 
 import java.io.BufferedReader;
 
